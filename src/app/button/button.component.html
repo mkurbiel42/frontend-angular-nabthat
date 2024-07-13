@@ -1,0 +1,8 @@
+<button class="button" [class.button--wide]="isWide" [class.button--border-transparent]="hasTransparentBorder" (click)="onClick()">
+    <ng-content></ng-content>
+    
+    <span *ngIf="hasCaret" class="button__caret" [class.button__caret--active]="globalState.isBottomMenuShown">
+        &#8964;
+    </span>
+</button>
+
